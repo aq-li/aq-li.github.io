@@ -159,11 +159,92 @@ h1 {
   color: var(--primary-color);
 }
 
+/* News Section */
+.news {
+  margin-bottom: 25px;
+}
+
+.news-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.news-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 15px;
+}
+
+.news-list li:last-child {
+  border-bottom: none;
+}
+
+.news-date {
+  display: inline-block;
+  min-width: 72px;
+  font-weight: 700;
+  color: #222;
+}
+
+.news-dot {
+  display: inline-block;
+  margin: 0 10px;
+  color: #999;
+}
+
+/* Misc Section */
+.misc {
+  margin-bottom: 25px;
+}
+
+.misc-subtitle {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #222;
+}
+
+.misc-bullets {
+  margin: 0 0 25px;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.misc-bullets li {
+  margin: 6px 0;
+}
+
 /* Research Section - Improved Image Hover Effect */
 .research-table {
   width: 100%;
   margin-bottom: 30px;
   border-spacing: 0;
+}
+
+/* Don't show divider after the last research item */
+.research-table tbody.research-item:last-child {
+  border-bottom: none;
+}
+
+.research-table tbody.research-item {
+  /* Minimal separation between projects */
+  border-bottom: 1px solid var(--border-color);
+}
+
+.research-table tbody.research-item > tr {
+  width: 100%;
+}
+
+.research-table tbody.research-item.highlight {
+  /* Use a very subtle cue for co-first/first author items */
+  border-bottom-color: rgba(23, 114, 208, 0.35);
+}
+
+/* Background highlight (avoid "loading bar" look) */
+.research-table tbody.research-item.highlight td {
+  background: rgba(23, 114, 208, 0.05);
 }
 
 .research-img {
@@ -176,14 +257,13 @@ h1 {
   position: relative;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: var(--shadow);
-  transition: transform 0.3s ease;
+  box-shadow: none;
   aspect-ratio: 230/165; /* Maintain original aspect ratio */
   background: #f8f8f8;
 }
 
 .img-hover-container:hover {
-  transform: translateY(-5px);
+  transform: none;
 }
 
 .img-hover-container .static-img,
@@ -228,6 +308,21 @@ h1 {
   vertical-align: middle;
 }
 
+.badges {
+  margin: 2px 0 0;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #666;
+}
+
+.badge-highlight {
+  color: #0f4f96;
+}
+
 .research-details h3 {
   font-size: 20px;
   font-weight: 700;
@@ -267,19 +362,18 @@ h1 {
 
 .links a {
   display: inline-block;
-  margin-right: 15px;
-  padding: 6px 12px;
-  background-color: var(--light-gray);
-  border-radius: 4px;
+  margin-right: 12px;
+  padding: 0;
+  background-color: transparent;
   color: var(--primary-color);
   text-decoration: none;
   font-weight: 600;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .links a:hover {
-  background-color: var(--primary-color);
-  color: white;
+  color: var(--secondary-color);
+  text-decoration: underline;
 }
 
 .links a i {
@@ -399,6 +493,11 @@ h1 {
     width: 100%;
     display: block;
     padding: 10px;
+  }
+
+  /* Keep research highlight subtle on mobile as well */
+  .research-table tbody.research-item.highlight td {
+    background: rgba(23, 114, 208, 0.05);
   }
   
   .logo-cell,
