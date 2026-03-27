@@ -223,14 +223,23 @@ h1 {
 }
 
 .visitor-stats {
-  display: flex;
-  justify-content: center;
+  display: block;
+  width: 100%;
   margin: 8px 0 24px;
 }
 
 .visitor-stats #clustrmaps-widget {
+  width: min(560px, 100%);
   max-width: 100%;
+  min-height: 260px;
+  margin: 0 auto;
   overflow: hidden;
+}
+
+.visitor-stats #clustrmaps-widget canvas,
+.visitor-stats #clustrmaps-widget iframe,
+.visitor-stats #clustrmaps-widget img {
+  max-width: 100% !important;
 }
 
 /* Research Section - Improved Image Hover Effect */
