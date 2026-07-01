@@ -328,6 +328,11 @@ h1 {
   display: block;
 }
 
+.release-teaser {
+  aspect-ratio: 1575/726;
+  background: #ffffff;
+}
+
 .research-details {
   padding: 20px;
   width: 70%;
