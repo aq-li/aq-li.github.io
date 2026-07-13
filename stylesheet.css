@@ -228,7 +228,8 @@ h1 {
   margin: 8px 0 24px;
 }
 
-.visitor-stats #clustrmaps-widget {
+.visitor-stats #clustrmaps-widget,
+.visitor-stats #mapmyvisitors-widget {
   width: min(560px, 100%);
   max-width: 100%;
   min-height: 260px;
@@ -238,7 +239,10 @@ h1 {
 
 .visitor-stats #clustrmaps-widget canvas,
 .visitor-stats #clustrmaps-widget iframe,
-.visitor-stats #clustrmaps-widget img {
+.visitor-stats #clustrmaps-widget img,
+.visitor-stats #mapmyvisitors-widget canvas,
+.visitor-stats #mapmyvisitors-widget iframe,
+.visitor-stats #mapmyvisitors-widget img {
   max-width: 100% !important;
 }
 
