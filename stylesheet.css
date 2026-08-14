@@ -222,17 +222,20 @@ h1 {
   margin: 6px 0;
 }
 
+/* The widget sizes itself from this container's width (map.js reads
+   parent().width() when w=a and sets height = w / 2.04), so scale the
+   map by scaling .visitor-stats. */
 .visitor-stats {
   display: block;
-  width: 100%;
-  margin: 8px 0 24px;
+  width: 50%;
+  min-width: 260px;
+  max-width: 100%;
+  margin: 8px auto 24px;
 }
 
 .visitor-stats #clustrmaps-widget,
 .visitor-stats #mapmyvisitors-widget {
-  width: min(560px, 100%);
   max-width: 100%;
-  min-height: 260px;
   margin: 0 auto;
   overflow: hidden;
 }
