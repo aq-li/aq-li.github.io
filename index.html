@@ -6,350 +6,413 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌮%3C/text%3E%3C/svg%3E">
   <meta name="author" content="Anqi Li">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#faf8f4">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500;1,6..72,600&display=swap">
-  <!-- Only the glyphs of the Chinese name are fetched; update text= if the name in <h1> changes. -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&text=%E6%9D%8E%E5%AE%89%E9%BD%90&display=swap">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Phosphor icons: "ph-duotone" for section headers, "ph-bold" for buttons and links. Browse names at https://phosphoricons.com -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/duotone/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/bold/style.css">
 </head>
 
 <body>
-  <div class="container">
+  <div class="page-wrapper">
+    <div class="container">
+      <table class="main-table">
+        <tbody>
+          <tr>
+            <td>
+              <table class="header-table">
+                <tbody>
+                  <tr>
+                    <td class="profile-text">
+                      <h1>Anqi Li | 李安齐</h1>
+                      <p>
+                        Hi, I am a junior undergraduate student at
+                         <!-- <a href="https://yuanpei.pku.edu.cn/en/"> -->
+                          Yuanpei College,
+                        <!-- </a>,  -->
+                        Peking University, majoring in Artificial Intelligence.
+                       <!-- </br> -->
+                        <!-- <br> -->
+                        <!-- I'm currently visiting at <a href="https://bair.berkeley.edu/">Berkeley AI Research (BAIR)</a>, advised by <a href="https://me.berkeley.edu/people/masayoshi-tomizuka/">Prof. Masayoshi Tomizuka</a>. -->
+                        <!-- I'm currently visiting at <a href="https://bair.berkeley.edu/">Berkeley AI Research (BAIR)</a>, advised by <a href="https://me.berkeley.edu/people/masayoshi-tomizuka/">Prof. Masayoshi Tomizuka</a>.
+                        Previously, I was an intern at the Embodied AI startup <a href="https://galbot.com/">Galbot</a>, where I had the privilege to work with <a href="https://hughw19.github.io/">Prof. He Wang</a>.  -->
+                        <br><br>
+                        Previously, I had the privilege to work with <a href="https://geometry.stanford.edu/?member=guibas">Prof. Leonidas Guibas</a> at Stanford University, <a href="https://me.berkeley.edu/people/masayoshi-tomizuka/">Prof. Masayoshi Tomizuka</a> at UC Berkeley, and <a href="https://hughw19.github.io/">Prof. He Wang</a> at Peking University.
+                        I am also working closely with <a href="https://robodhruv.github.io/"> Prof. Dhruv Shah</a> at Princeton University.
+                        <!-- I'm currently working in the <a href="https://pku-epic.github.io/">EPIC Lab</a> 
+                        under the supervision of <a href="https://hughw19.github.io/">Prof. He Wang</a> 
+                        and working closely with <a href="https://jzhzhang.github.io/">Jiazhao Zhang</a>.  -->
+                        <!-- I focus on embodied AI, and I am particularly interested in building robot foundation models that can understand, reason, and plan across diverse environments. <br> -->
+                        <!-- particularly Vision-Language-Action (VLA) models 
+                        and their applications in embodied navigation.<br> -->
+                        <br><br>
 
-    <header class="hero">
-      <div class="profile-text">
-        <h1>Anqi Li <span class="name-zh" lang="zh">李安齐</span></h1>
-        <p>
-          Hi, I am a junior undergraduate student at
-           <!-- <a href="https://yuanpei.pku.edu.cn/en/"> -->
-            Yuanpei College,
-          <!-- </a>,  -->
-          Peking University, majoring in Artificial Intelligence.
-          <!-- I'm currently visiting at <a href="https://bair.berkeley.edu/">Berkeley AI Research (BAIR)</a>, advised by <a href="https://me.berkeley.edu/people/masayoshi-tomizuka/">Prof. Masayoshi Tomizuka</a>. -->
-          <!-- I'm currently visiting at <a href="https://bair.berkeley.edu/">Berkeley AI Research (BAIR)</a>, advised by <a href="https://me.berkeley.edu/people/masayoshi-tomizuka/">Prof. Masayoshi Tomizuka</a>.
-          Previously, I was an intern at the Embodied AI startup <a href="https://galbot.com/">Galbot</a>, where I had the privilege to work with <a href="https://hughw19.github.io/">Prof. He Wang</a>.  -->
-        </p>
-        <p>
-          Previously, I had the privilege to work with <a href="https://geometry.stanford.edu/?member=guibas">Prof. Leonidas Guibas</a> at Stanford University, <a href="https://me.berkeley.edu/people/masayoshi-tomizuka/">Prof. Masayoshi Tomizuka</a> at UC Berkeley, and <a href="https://hughw19.github.io/">Prof. He Wang</a> at Peking University.
-          I am also working closely with <a href="https://robodhruv.github.io/">Prof. Dhruv Shah</a> at Princeton University.
-          <!-- I'm currently working in the <a href="https://pku-epic.github.io/">EPIC Lab</a>
-          under the supervision of <a href="https://hughw19.github.io/">Prof. He Wang</a>
-          and working closely with <a href="https://jzhzhang.github.io/">Jiazhao Zhang</a>.  -->
-          <!-- I focus on embodied AI, and I am particularly interested in building robot foundation models that can understand, reason, and plan across diverse environments. <br> -->
-          <!-- particularly Vision-Language-Action (VLA) models
-          and their applications in embodied navigation.<br> -->
-        </p>
-        <p>
-          My research focuses on Embodied AI. I am particularly interested in
-          building robot foundation models that can understand, reason, and plan
-          across diverse environments. Some recent works include leveraging
-          vision-language-action models for embodied navigation and whole-body control.
+                        My research focuses on Embodied AI. I am particularly interested in 
+                        building robot foundation models that can understand, reason, and plan 
+                        across diverse environments. Some recent works include leveraging 
+                        vision-language-action models for embodied navigation and whole-body control. 
+                        <br>
 
-          <!-- I am actively looking for a Ph.D. position in Fall 2027. Please feel free to reach out to me if you are interested in my research!  -->
-
-           <!-- and mobile manipulation.<br> -->
-        </p>
-        <div class="social-links">
-          <a href="mailto:lianqi0417@stu.pku.edu.cn"><i class="fas fa-envelope"></i> Email</a>
-          <a href="https://github.com/andyhandsom6"><i class="fab fa-github"></i> GitHub</a>
-          <a href="https://www.linkedin.com/in/anqi-li-210ab5372"><i class="fab fa-linkedin"></i> LinkedIn</a>
-          <a href="https://x.com/lnq105202"><i class="fab fa-x-twitter"></i> X</a>
-          <a href="https://scholar.google.com/citations?user=bnqOtxcAAAAJ&hl=en&oi=sra"><i class="fas fa-graduation-cap"></i> Scholar</a>
-          <a href="./docs/CV_Anqi_Li_2026.pdf"><i class="fas fa-file-alt"></i> CV</a>
-          <!-- Additional links can be added here -->
-        </div>
-      </div>
-      <div class="profile-img">
-        <a href="images/anqi/Anqi_sub.jpg">
-          <img src="images/anqi/Anqi_sub.jpg" alt="Anqi Li" width="990" height="1008">
-        </a>
-      </div>
-    </header>
-
-    <section>
-      <h2>News</h2>
-      <ul class="news-list">
-        <!-- Add / edit news items here -->
-        <li><span class="news-date">2026.09</span>🎉 <strong>TANGO💃🏻</strong> is selected as a <strong class="pub-award">Spotlight (Top 3.4%)</strong> at <strong>CoRL 2026</strong>.</li>
-        <li><span class="news-date">2026.09</span>🎉 <strong>TANGO💃🏻</strong> and
-        <strong>SPAN-Nav</strong> get accepted to <strong>CoRL 2026</strong>.</li>
-        <li><span class="news-date">2026.01</span>🎉 <strong>UrbanVLA</strong> gets accepted to <strong>ICRA 2026</strong>.</li>
-        <li><span class="news-date">2026.01</span>🎉 <strong>NavFoM</strong> gets accepted to <strong>ICLR 2026</strong>.</li>
-        <!-- <li><span class="news-date">2026.01</span>I joined Berkeley AI Research Lab as a visiting student.</li> -->
-        <!-- <li><span class="news-date">2025.11</span>I am joining UC Berkeley as a visiting student in Spring 2026. Feel free to reach out to chat or collaborate! </li> -->
-        <li><span class="news-date">2025.11</span>I gave an <strong><a href="https://mp.weixin.qq.com/s/vy6qmKXqoHwb3gB3oxEyuQ">invited talk</a></strong> at Yuanpei College, Peking University, introducing my work on urban micromobility. </li>
-        <li><span class="news-date">2025.08</span>🎉 <strong>TrackVLA</strong> gets accepted to <strong>CoRL 2025</strong>.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Research</h2>
-
-      <!-- Add class "highlight" to first / co-first author papers. -->
-      <div class="research-list">
-
-        <article class="research-item highlight">
-          <div class="research-img">
-            <div class="img-hover-container">
-              <img class="static-img" src="images/tango/teaser.png" alt="TANGO teaser" width="1575" height="726">
-              <!-- Full official demos from https://tango-vla.github.io/static/videos/web/: long_horizon_nav, short_horizon_obstacle_avoiding, gateway_sidestep, gateway_squat, gateway_stride; 4× source playback. -->
-              <img class="animated-img" src="images/tango/tango.gif" alt="TANGO full demos at 4× playback: navigation, obstacle avoidance, sidestepping, crouching, and stepping over obstacles" loading="lazy" decoding="async">
-            </div>
-          </div>
-          <div class="research-details">
-            <h3><a href="https://tango-vla.github.io">TANGO💃🏻: Humanoid Navigation in Cluttered Environments with a Whole-Body Vision-Language-Action Model</a></h3>
-            <div class="authors">
-              <strong>Anqi Li*</strong>, Yuxin Chen*<sup>‡</sup>, Zhaobo Li*, Zhuo Cao*, Junli Ren,
-              Masayoshi Tomizuka, Dhruv Shah<sup>†</sup>
-            </div>
-            <div class="pub-info">
-              <span class="venue">CoRL 2026 <span class="pub-award">Spotlight (Top 3.4%)</span></span>
-              <span class="venue">RSS@WBCM <span class="pub-award">Oral</span></span>
-            </div>
-            <div class="links">
-              <a href="https://arxiv.org/pdf/2609.09158v1"><i class="fas fa-file-pdf"></i> Paper</a>
-              <!-- <a href="https://github.com/wsakobe/TrackVLA"><i class="fas fa-code"></i> Code</a> -->
-              <a href="https://tango-vla.github.io"><i class="fas fa-link"></i> Project page</a>
-            </div>
-            <p>
-              TANGO is a whole-body vision-language-action framework for language-conditioned humanoid traversal in cluttered indoor environments.
-            </p>
-          </div>
-        </article>
-
-        <article class="research-item">
-          <div class="research-img">
-            <div class="img-hover-container">
-              <img class="static-img" src="images/spannav/teaser.png" alt="SpanNav static" width="2693" height="1418">
-              <!-- Full official demos from https://pku-epic.github.io/SPAN-Nav-Web/videos/: vln_long.mp4 (4× source sped up 2× to 8×), vln_lidar_close.mp4 (1× source sped up 4×). -->
-              <img class="animated-img" src="images/spannav/spannav.gif" alt="SPAN-Nav complete long-route navigation at 8× and short-route navigation at 4× with live occupancy maps" loading="lazy" decoding="async">
-            </div>
-          </div>
-          <div class="research-details">
-            <h3><a href="https://pku-epic.github.io/SPAN-Nav-Web/">SPAN-Nav: Generalized Spatial Awareness for Embodied Navigation</a></h3>
-            <div class="authors">
-              Jiahang Liu*, Tianyu Xu*, Jiawei Chen*, Lu Yue*,
-              Jiazhao Zhang*, Zhiyong Wang*, Minghan Li, Qisheng Zhao,
-              <strong>Anqi Li</strong>, Qi Su,
-              Zhizheng Zhang<sup>†</sup>, He Wang<sup>†</sup>
-            </div>
-            <div class="pub-info">
-              <span class="venue">CoRL 2026</span>
-            </div>
-            <div class="links">
-              <a href="https://arxiv.org/pdf/2603.09163"><i class="fas fa-file-pdf"></i> Paper</a>
-              <!-- <a href="https://github.com/wsakobe/TrackVLA"><i class="fas fa-code"></i> Code</a> -->
-              <a href="https://pku-epic.github.io/SPAN-Nav-Web/"><i class="fas fa-link"></i> Project page</a>
-            </div>
-            <p>
-              SPAN-Nav is an end-to-end navigation model with universal 3D spatial awareness. It utilizes a single spatial token extracted from RGB video and a Spatial Chain-of-Thought mechanism to achieve robust path planning and obstacle avoidance in complex environments.
-            </p>
-          </div>
-        </article>
-
-        <article class="research-item highlight">
-          <div class="research-img">
-            <div class="img-hover-container">
-              <img class="static-img" src="images/urbanvla/teaser.jpeg" alt="UrbanVLA static" width="1144" height="858">
-              <img class="animated-img" src="images/urbanvla/urbanvla.gif" alt="UrbanVLA animation" loading="lazy" decoding="async">
-            </div>
-          </div>
-          <div class="research-details">
-            <h3><a href="https://pku-epic.github.io/UrbanVLA-Web/">UrbanVLA: A Vision-Language-Action Model for Urban Micromobility</a></h3>
-            <div class="authors">
-              <strong>Anqi Li*</strong>, Zhiyong Wang*, Jiazhao Zhang*, Minghan Li,
-              Yunpeng Qi, Zhibo Chen, Zhizheng Zhang<sup>†</sup>, He Wang<sup>†</sup>
-            </div>
-            <div class="pub-info">
-              <span class="venue">ICRA 2026</span>
-            </div>
-            <div class="links">
-              <a href="https://arxiv.org/pdf/2510.23576"><i class="fas fa-file-pdf"></i> Paper</a>
-              <a href="https://github.com/GalaxyGeneralRobotics/UrbanVLA"><i class="fas fa-code"></i> Code</a>
-              <a href="https://pku-epic.github.io/UrbanVLA-Web/"><i class="fas fa-link"></i> Project page</a>
-            </div>
-            <p>
-              UrbanVLA is a route-conditioned vision-language-action model for urban micromobility. It aligns high-level navigation routes with visual observations to enable scalable, long-horizon navigation.
-              <!-- Trained via a two stage pipeline including SFT and RFT, UrbanVLA outperforms baselines by over 55% on MetaUrban and achieves robust real-world navigation across 500m+ routes. -->
-            </p>
-          </div>
-        </article>
-
-        <article class="research-item highlight">
-          <div class="research-img">
-            <div class="img-hover-container">
-              <img class="static-img" src="images/navfom/teaser.png" alt="NavFOM static" width="1722" height="934">
-              <img class="animated-img" src="images/navfom/demo.gif" alt="NavFOM animation" loading="lazy" decoding="async">
-            </div>
-          </div>
-          <div class="research-details">
-            <h3><a href="https://pku-epic.github.io/NavFoM-Web/">Embodied Navigation Foundation Model</a></h3>
-            <div class="authors">
-              Jiazhao Zhang*, <strong>Anqi Li*</strong>, Yunpeng Qi*, Minghan Li*, Jiahang Liu,
-              Shaoan Wang, Haoran Liu, Gengze Zhou, Yuze Wu, Xingxing Li, Yuxin Fan,
-              Wenjun Li, Zhibo Chen, Fei Gao, Qi Wu, Zhizheng Zhang<sup>†</sup>, He Wang<sup>†</sup>
-            </div>
-            <div class="pub-info">
-              <span class="venue">ICLR 2026</span>
-            </div>
-            <div class="links">
-              <a href="https://arxiv.org/pdf/2509.12129"><i class="fas fa-file-pdf"></i> Paper</a>
-              <!-- <a href="https://github.com/wsakobe/TrackVLA"><i class="fas fa-code"></i> Code</a> -->
-              <a href="https://pku-epic.github.io/NavFoM-Web/"><i class="fas fa-link"></i> Project page</a>
-            </div>
-            <p>
-              NavFoM is a cross-embodiment and cross-task navigation model trained on 8 million samples encompassing quadrupeds, drones, wheeled robots, and vehicles, spanning tasks including vision-and-language navigation, object searching, target tracking, and autonomous driving.
-            </p>
-          </div>
-        </article>
-
-        <article class="research-item">
-          <div class="research-img">
-            <div class="img-hover-container">
-              <img class="static-img" src="images/trackvla/trackvla.png" alt="TrackVLA static" width="1240" height="684">
-              <img class="animated-img" src="images/trackvla/trackvla.gif" alt="TrackVLA animation" loading="lazy" decoding="async">
-            </div>
-          </div>
-          <div class="research-details">
-            <h3><a href="https://pku-epic.github.io/TrackVLA-web/">TrackVLA: Embodied Visual Tracking in the Wild</a></h3>
-            <div class="authors">
-              Shaoan Wang*, Jiazhao Zhang*, Minghan Li, Jiahang Liu,
-              <strong>Anqi Li</strong>, Kui Wu, Fangwei Zhong, Junzhi Yu,
-              Zhizheng Zhang<sup>†</sup>, He Wang<sup>†</sup>
-            </div>
-            <div class="pub-info">
-              <span class="venue">CoRL 2025</span>
-            </div>
-            <div class="links">
-              <a href="https://arxiv.org/pdf/2505.23189"><i class="fas fa-file-pdf"></i> Paper</a>
-              <a href="https://github.com/wsakobe/TrackVLA"><i class="fas fa-code"></i> Code</a>
-              <a href="https://pku-epic.github.io/TrackVLA-web/"><i class="fas fa-link"></i> Project page</a>
-            </div>
-            <p>
-              TrackVLA is a vision-language-action model capable of simultaneous object recognition and visual tracking. It demonstrates robust tracking, long-horizon tracking, and cross-domain generalization across diverse challenging environments.
-            </p>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <section>
-      <h2>Experience</h2>
-
-      <div class="exp-list">
-
-        <div class="exp-item">
-          <div class="exp-logo">
-            <img src="images/logos/stanford.png" alt="Stanford University">
-          </div>
-          <div class="exp-details">
-            <div class="exp-head">
-              <h3>Stanford University</h3>
-              <div class="exp-meta">
-                <span>2026.06 – 2026.09</span>
+                        <!-- <br> -->
+                        <!-- I am actively looking for a Ph.D. position in Fall 2027. Please feel free to reach out to me if you are interested in my research!  -->
+                        
+                         <!-- and mobile manipulation.<br> -->
+                      </p>
+                      <div class="social-links">
+                        <a href="mailto:lianqi0417@stu.pku.edu.cn"><i class="ph-bold ph-envelope-simple"></i> Email</a>
+                        <a href="https://github.com/andyhandsom6"><i class="ph-bold ph-github-logo"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/in/anqi-li-210ab5372"><i class="ph-bold ph-linkedin-logo"></i> LinkedIn</a>
+                        <a href="https://x.com/lnq105202"><i class="ph-bold ph-x-logo"></i> X</a>
+                        <a href="https://scholar.google.com/citations?user=bnqOtxcAAAAJ&hl=en&oi=sra"><i class="ph-bold ph-graduation-cap"></i> Scholar</a>
+                        <a href="./docs/CV_Anqi_Li_2026.pdf"><i class="ph-bold ph-file-text"></i> CV</a>
+                        <!-- Additional links can be added here -->
+                      </div>
+                    </td>
+                    <td class="profile-img">
+                      <div class="img-container">
+                        <a href="images/anqi/Anqi_sub.jpg">
+                          <img src="images/anqi/Anqi_sub.jpg" alt="Anqi Li">
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <div class="section">
+                <h2><i class="ph-duotone ph-newspaper"></i> News</h2>
               </div>
-            </div>
-            <p><strong>Visiting Researcher</strong> through the <a href="https://engineering.stanford.edu/students-academics/global-engineering-programs/undergraduate-visiting-research-program">UGVR</a> program</p>
-            <p>Research Advisor: <a href="https://geometry.stanford.edu/?member=guibas">Prof. Leonidas Guibas</a></p>
-          </div>
-        </div>
 
-        <div class="exp-item">
-          <div class="exp-logo">
-            <img src="images/logos/uc_berkeley.png" alt="UC Berkeley">
-          </div>
-          <div class="exp-details">
-            <div class="exp-head">
-              <h3>University of California, Berkeley</h3>
-              <div class="exp-meta">
-                <span>2026.01 – 2026.06</span>
+              <div class="news">
+                <ul class="news-list">
+                  <!-- Add / edit news items here -->
+                  <li><span class="news-date">2026.09</span><span class="news-dot">•</span>🎉 <strong>TANGO💃🏻</strong> is selected as a <strong class="pub-award">Spotlight (Top 3.4%)</strong> at <strong>CoRL 2026</strong>.</li>
+                  <li><span class="news-date">2026.09</span><span class="news-dot">•</span>🎉 <strong>TANGO💃🏻</strong> and 
+                  <strong>SPAN-Nav</strong> get accepted to <strong>CoRL 2026</strong>.</li>
+                  <li><span class="news-date">2026.01</span><span class="news-dot">•</span>🎉 <strong>UrbanVLA</strong> gets accepted to <strong>ICRA 2026</strong>.</li>
+                  <li><span class="news-date">2026.01</span><span class="news-dot">•</span>🎉 <strong>NavFoM</strong> gets accepted to <strong>ICLR 2026</strong>.</li>
+                  <!-- <li><span class="news-date">2026.01</span><span class="news-dot">•</span>I joined Berkeley AI Research Lab as a visiting student.</li> -->
+                  <!-- <li><span class="news-date">2025.11</span><span class="news-dot">•</span>I am joining UC Berkeley as a visiting student in Spring 2026. Feel free to reach out to chat or collaborate! </li> -->
+                  <li><span class="news-date">2025.11</span><span class="news-dot">•</span>I gave an <strong><a href="https://mp.weixin.qq.com/s/vy6qmKXqoHwb3gB3oxEyuQ">invited talk</a></strong> at Yuanpei College, Peking University, introducing my work on urban micromobility. </li>
+                  <li><span class="news-date">2025.08</span><span class="news-dot">•</span>🎉 <strong>TrackVLA</strong> gets accepted to <strong>CoRL 2025</strong>.</li>
+                </ul>
               </div>
-            </div>
-            <p><strong>Visiting Student</strong> through the <a href="https://extension.berkeley.edu/international/academic/berkeley-global-access/">BGA</a> program</p>
-            <p>Research Advisor: <a href="https://me.berkeley.edu/people/masayoshi-tomizuka/">Prof. Masayoshi Tomizuka</a></p>
-          </div>
-        </div>
 
-        <div class="exp-item">
-          <div class="exp-logo">
-            <img src="images/logos/galbot.png" alt="Galbot">
-          </div>
-          <div class="exp-details">
-            <div class="exp-head">
-              <h3>Galbot</h3>
-              <div class="exp-meta">
-                <span>2024.09 – 2026.01</span>
+              <div class="section">
+                <h2><i class="ph-duotone ph-flask"></i> Research</h2>
               </div>
-            </div>
-            <p><strong>Research Intern</strong></p>
-            <p>Research Advisor: <a href="https://hughw19.github.io/">Prof. He Wang</a>
-            <!-- Dr. <a href="https://scholar.google.com/citations?user=X7M0I8kAAAAJ&hl=en">Zhizheng Zhang</a></p> -->
-            <!-- <a href="https://jzhzhang.github.io/">Jiazhao Zhang</a> -->
-            </p>
-          </div>
-        </div>
+              
+              <table class="research-table">
 
-        <div class="exp-item">
-          <div class="exp-logo">
-            <img src="images/logos/peking_university.png" alt="Peking University">
-          </div>
-          <div class="exp-details">
-            <div class="exp-head">
-              <h3>Peking University</h3>
-              <div class="exp-meta">
-                <span>2023.09 – Present</span>
+                <tbody class="research-item highlight">
+                  <tr>
+                    <td class="research-img">
+                      <div class="img-hover-container release-teaser">
+                        <div class="static-img">
+                          <img src='images/tango/teaser.png' alt="TANGO teaser">
+                        </div>
+                        <div class="animated-img">
+                          <!-- Full official demos from https://tango-vla.github.io/static/videos/web/: long_horizon_nav, short_horizon_obstacle_avoiding, gateway_sidestep, gateway_squat, gateway_stride; 4× source playback. -->
+                          <img src="images/tango/tango.gif" alt="TANGO full demos at 4× playback: navigation, obstacle avoidance, sidestepping, crouching, and stepping over obstacles" width="480" height="270" loading="lazy" decoding="async">
+                        </div>
+                      </div>
+                    </td>
+                    <td class="research-details">
+                      <a href="https://tango-vla.github.io">
+                        <h3>TANGO💃🏻: Humanoid Navigation in Cluttered Environments with a Whole-Body Vision-Language-Action Model</h3>
+                      </a>
+                      <div class="authors">
+                        <strong>Anqi Li*</strong>, Yuxin Chen*<sup>‡</sup>, Zhaobo Li*, Zhuo Cao*, Junli Ren,
+                        Masayoshi Tomizuka, Dhruv Shah<sup>†</sup>
+                      </div>
+                      <div class="pub-info">
+                        <em><strong>CoRL 2026 <span class="pub-award">Spotlight (Top 3.4%)</span></strong></em><br>
+                        <em><strong>RSS@WBCM <span class="pub-award">Oral</span></strong></em>
+                      </div>
+                      <div class="links">
+                        <a href="https://arxiv.org/pdf/2609.09158v1"><i class="ph-bold ph-file-pdf"></i> Paper</a>
+                        <!-- <a href="https://github.com/wsakobe/TrackVLA"><i class="ph-bold ph-code"></i> Code</a> -->
+                        <a href="https://tango-vla.github.io"><i class="ph-bold ph-link"></i> Project page</a>
+                      </div>
+                      <p>
+                        TANGO is a whole-body vision-language-action framework for language-conditioned humanoid traversal in cluttered indoor environments.
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tbody class="research-item">
+                  <tr>
+                    <td class="research-img">
+                      <div class="img-hover-container">
+                        <div class="static-img">
+                          <img src='images/spannav/teaser.png' alt="SpanNav static">
+                        </div>
+                        <div class="animated-img">
+                          <!-- Full official demos from https://pku-epic.github.io/SPAN-Nav-Web/videos/: vln_long.mp4 (4× source sped up 2× to 8×), vln_lidar_close.mp4 (1× source sped up 4×). -->
+                          <img src="images/spannav/spannav.gif" alt="SPAN-Nav complete long-route navigation at 8× and short-route navigation at 4× with live occupancy maps" width="384" height="216" loading="lazy" decoding="async">
+                        </div>
+                      </div>
+                    </td>
+                    <td class="research-details">
+                      <a href="https://pku-epic.github.io/SPAN-Nav-Web/">
+                        <h3>SPAN-Nav: Generalized Spatial Awareness for Embodied Navigation</h3>
+                      </a>
+                      <div class="authors">
+                        Jiahang Liu*, Tianyu Xu*, Jiawei Chen*, Lu Yue*, 
+                        Jiazhao Zhang*, Zhiyong Wang*, Minghan Li, Qisheng Zhao,
+                        <strong>Anqi Li</strong>, Qi Su, 
+                        Zhizheng Zhang<sup>†</sup>, He Wang<sup>†</sup>
+                      </div>
+                      <div class="pub-info">
+                        <em><strong>CoRL 2026</strong></em>
+                      </div>
+                      <div class="links">
+                        <a href="https://arxiv.org/pdf/2603.09163"><i class="ph-bold ph-file-pdf"></i> Paper</a>
+                        <!-- <a href="https://github.com/wsakobe/TrackVLA"><i class="ph-bold ph-code"></i> Code</a> -->
+                        <a href="https://pku-epic.github.io/SPAN-Nav-Web/"><i class="ph-bold ph-link"></i> Project page</a>
+                      </div>
+                      <p>
+                        SPAN-Nav is an end-to-end navigation model with universal 3D spatial awareness. It utilizes a single spatial token extracted from RGB video and a Spatial Chain-of-Thought mechanism to achieve robust path planning and obstacle avoidance in complex environments.
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+
+
+                <tbody class="research-item highlight">
+                  <tr>
+                    <td class="research-img">
+                      <div class="img-hover-container">
+                        <div class="static-img">
+                          <img src='images/urbanvla/teaser.jpeg' alt="UrbanVLA static">
+                        </div>
+                        <div class="animated-img">
+                          <img src="images/urbanvla/urbanvla.gif" alt="UrbanVLA animation">
+                        </div>
+                      </div>
+                    </td>
+                    <td class="research-details">
+                      <a href="https://pku-epic.github.io/UrbanVLA-Web/">
+                        <h3>UrbanVLA: A Vision-Language-Action Model for Urban Micromobility</h3>
+                      </a>
+                      <div class="authors">
+                        <strong>Anqi Li*</strong>, Zhiyong Wang*, Jiazhao Zhang*, Minghan Li, 
+                        Yunpeng Qi, Zhibo Chen, Zhizheng Zhang<sup>†</sup>, He Wang<sup>†</sup>
+                      </div>
+                      <div class="pub-info">
+                        <em><strong>ICRA 2026</strong></em>
+                      </div>
+                      <div class="links">
+                        <a href="https://arxiv.org/pdf/2510.23576"><i class="ph-bold ph-file-pdf"></i> Paper</a>
+                        <a href="https://github.com/GalaxyGeneralRobotics/UrbanVLA"><i class="ph-bold ph-code"></i> Code</a>
+                        <a href="https://pku-epic.github.io/UrbanVLA-Web/"><i class="ph-bold ph-link"></i> Project page</a>
+                      </div>
+                      <p>
+                        UrbanVLA is a route-conditioned vision-language-action model for urban micromobility. It aligns high-level navigation routes with visual observations to enable scalable, long-horizon navigation. 
+                        <!-- Trained via a two stage pipeline including SFT and RFT, UrbanVLA outperforms baselines by over 55% on MetaUrban and achieves robust real-world navigation across 500m+ routes. -->
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+                <tbody class="research-item highlight">
+                  <tr>
+                    <td class="research-img">
+                      <div class="img-hover-container">
+                        <div class="static-img">
+                          <img src='images/navfom/teaser.png' alt="NavFOM static">
+                        </div>
+                        <div class="animated-img">
+                          <img src="images/navfom/demo.gif" alt="NavFOM animation">
+                        </div>
+                      </div>
+                    </td>
+                    <td class="research-details">
+                      <a href="https://pku-epic.github.io/NavFoM-Web/">
+                        <h3>Embodied Navigation Foundation Model</h3>
+                      </a>
+                      <div class="authors">
+                        Jiazhao Zhang*, <strong>Anqi Li*</strong>, Yunpeng Qi*, Minghan Li*, Jiahang Liu,  
+                        Shaoan Wang, Haoran Liu, Gengze Zhou, Yuze Wu, Xingxing Li, Yuxin Fan,  
+                        Wenjun Li, Zhibo Chen, Fei Gao, Qi Wu, Zhizheng Zhang<sup>†</sup>, He Wang<sup>†</sup>
+                      </div>
+                      <div class="pub-info">
+                        <em><strong>ICLR 2026</strong></em>
+                      </div>
+                      <div class="links">
+                        <a href="https://arxiv.org/pdf/2509.12129"><i class="ph-bold ph-file-pdf"></i> Paper</a>
+                        <!-- <a href="https://github.com/wsakobe/TrackVLA"><i class="ph-bold ph-code"></i> Code</a> -->
+                        <a href="https://pku-epic.github.io/NavFoM-Web/"><i class="ph-bold ph-link"></i> Project page</a>
+                      </div>
+                      <p>
+                        NavFoM is a cross-embodiment and cross-task navigation model trained on 8 million samples encompassing quadrupeds, drones, wheeled robots, and vehicles, spanning tasks including vision-and-language navigation, object searching, target tracking, and autonomous driving.
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+                <tbody class="research-item">
+                  <tr>
+                    <td class="research-img">
+                      <div class="img-hover-container">
+                        <div class="static-img">
+                          <img src='images/trackvla/trackvla.png' alt="TrackVLA static">
+                        </div>
+                        <div class="animated-img">
+                          <img src="images/trackvla/trackvla.gif" alt="TrackVLA animation">
+                        </div>
+                      </div>
+                    </td>
+                    <td class="research-details">
+                      <a href="https://pku-epic.github.io/TrackVLA-web/">
+                        <h3>TrackVLA: Embodied Visual Tracking in the Wild</h3>
+                      </a>
+                      <div class="authors">
+                        Shaoan Wang*, Jiazhao Zhang*, Minghan Li, Jiahang Liu, 
+                        <strong>Anqi Li</strong>, Kui Wu, Fangwei Zhong, Junzhi Yu, 
+                        Zhizheng Zhang<sup>†</sup>, He Wang<sup>†</sup>
+                      </div>
+                      <div class="pub-info">
+                        <em><strong>CoRL 2025</strong></em>
+                      </div>
+                      <div class="links">
+                        <a href="https://arxiv.org/pdf/2505.23189"><i class="ph-bold ph-file-pdf"></i> Paper</a>
+                        <a href="https://github.com/wsakobe/TrackVLA"><i class="ph-bold ph-code"></i> Code</a>
+                        <a href="https://pku-epic.github.io/TrackVLA-web/"><i class="ph-bold ph-link"></i> Project page</a>
+                      </div>
+                      <p>
+                        TrackVLA is a vision-language-action model capable of simultaneous object recognition and visual tracking. It demonstrates robust tracking, long-horizon tracking, and cross-domain generalization across diverse challenging environments.
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="section">
+                <h2><i class="ph-duotone ph-briefcase"></i> Experience</h2>
               </div>
-            </div>
-            <p><strong>Undergraduate Student</strong></p>
-            <p>Major: Intelligence Science and Technology @ <a href="https://yuanpei.pku.edu.cn/en/">Yuanpei College</a><br>
-              Minor: Innovation and Entrepreneurship Management @ <a href="https://en.gsm.pku.edu.cn/">Guanghua School of Management</a></p>
-          </div>
-        </div>
+              
+              <table class="experience-table">
+                <tbody>
+                  <tr>
+                    <td class="logo-cell">
+                      <div class="logo-container">
+                        <img src="images/logos/stanford.png" alt="Stanford University">
+                      </div>
+                    </td>
+                    <td class="exp-details">
+                      <div class="exp-head">
+                        <h3>Stanford University</h3>
+                        <span class="exp-meta">2026.06 - 2026.09</span>
+                      </div>
+                      <p><strong>Visiting Researcher</strong> through the <a href="https://engineering.stanford.edu/students-academics/global-engineering-programs/undergraduate-visiting-research-program">UGVR</a> program</p>
+                      <p>Research Advisor: <a href="https://geometry.stanford.edu/?member=guibas">Prof. Leonidas Guibas</a></p>
+                    </td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td class="logo-cell">
+                      <div class="logo-container">
+                        <img src="images/logos/uc_berkeley.png" alt="UC Berkeley">
+                      </div>
+                    </td>
+                    <td class="exp-details">
+                      <div class="exp-head">
+                        <h3>University of California, Berkeley</h3>
+                        <span class="exp-meta">2026.01 - 2026.06</span>
+                      </div>
+                      <p><strong>Visiting Student</strong> through the <a href="https://extension.berkeley.edu/international/academic/berkeley-global-access/">BGA</a> program</p>
+                      <p>Research Advisor: <a href="https://me.berkeley.edu/people/masayoshi-tomizuka/">Prof. Masayoshi Tomizuka</a></p>
+                    </td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td class="logo-cell">
+                      <div class="logo-container">
+                        <img src="images/logos/galbot.png" alt="Galbot">
+                      </div>
+                    </td>
+                    <td class="exp-details">
+                      <div class="exp-head">
+                        <h3>Galbot</h3>
+                        <span class="exp-meta">2024.09 - 2026.01</span>
+                      </div>
+                      <p><strong>Research Intern</strong></p>
+                      <p>Research Advisor: <a href="https://hughw19.github.io/">Prof. He Wang</a> 
+                      <!-- Dr. <a href="https://scholar.google.com/citations?user=X7M0I8kAAAAJ&hl=en">Zhizheng Zhang</a></p> -->
+                      <!-- <a href="https://jzhzhang.github.io/">Jiazhao Zhang</a> -->
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td class="logo-cell">
+                      <div class="logo-container">
+                        <img src="images/logos/peking_university.png" alt="Peking University">
+                      </div>
+                    </td>
+                    <td class="exp-details">
+                      <div class="exp-head">
+                        <h3>Peking University</h3>
+                        <span class="exp-meta">2023.09 - Present</span>
+                      </div>
+                      <p><strong>Undergraduate Student</strong></p>
+                      <p>Major: Intelligence Science and Technology @ <a href="https://yuanpei.pku.edu.cn/en/">Yuanpei College</a><br>
+                        Minor: Innovation and Entrepreneurship Management @ <a href="https://en.gsm.pku.edu.cn/">Guanghua School of Management</a></p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <div class="section">
+                <h2><i class="ph-duotone ph-trophy"></i> Selected Awards</h2>
+              </div>
 
-      </div>
-    </section>
+              <div class="misc">
+                <ul class="misc-bullets">
+                  <li><strong>2026:</strong> First Prize, Academic Rising Star, Yuanpei College, Peking University</li>
+                </ul>
+              </div>
 
-    <section>
-      <h2>Selected Awards</h2>
-      <ul class="news-list">
-        <li><span class="news-date">2026</span>First Prize, Academic Rising Star, Yuanpei College, Peking University</li>
-      </ul>
-    </section>
+              <div class="section">
+                <h2><i class="ph-duotone ph-shapes"></i> Miscellaneous</h2>
+              </div>
 
-    <section>
-      <h2>Miscellaneous</h2>
-      <div class="misc">
-        <p>
-          Outside of research, I have several hobbies.
-        </p>
-        <ul class="misc-bullets">
-          <li>I enjoy playing basketball, and I am a huge fan of the NBA. My favorite player is Luka Dončić. </li>
-          <li>I love performing on the trombone. I am an active member of the Symphony Orchestra at my high school, Experimental High School attached to Beijing Normal University. Check out our <a href="https://www.bilibili.com/video/BV1Rx2MB8EEm">recent performance</a>.</li>
-          <li>I am a speedcuber. I participated in several speedcubing competitions held by the World Cube Association (WCA). Check out my <a href="https://www.worldcubeassociation.org/persons/2018LIAN42">WCA personal profile</a>.</li>
-          <li>I enjoy spending time behind the wheel. If you are new to California, you might enjoy this <a href="./docs/CA_Loop.pdf">four-day California Loop</a> I put together. See you down the road! </li>
-        </ul>
-      </div>
-    </section>
+              <div class="misc">
+                <p>
+                  Outside of research, I have several hobbies. 
+                </p>
+                <ul class="misc-bullets">
+                  <li>I enjoy playing basketball, and I am a huge fan of the NBA. My favorite player is Luka Dončić. </li>
+                  <li>I love performing on the trombone. I am an active member of the Symphony Orchestra at my high school, Experimental High School attached to Beijing Normal University. Check out our <a href="https://www.bilibili.com/video/BV1Rx2MB8EEm">recent performance</a>.</li>
+                  <li>I am a speedcuber. I participated in several speedcubing competitions held by the World Cube Association (WCA). Check out my <a href="https://www.worldcubeassociation.org/persons/2018LIAN42">WCA personal profile</a>.</li>
+                  <li>I enjoy spending time behind the wheel. If you are new to California, you might enjoy this <a href="./docs/CA_Loop.pdf">four-day California Loop</a> I put together. See you down the road! </li>
+                </ul>
+              </div>
 
-    <section>
-      <h2>Global Visitor Stats</h2>
+              <div class="section">
+                <h2><i class="ph-duotone ph-globe-hemisphere-west"></i> Global Visitor Stats</h2>
+              </div>
+              <div style="height: 16px;"></div>
 
-      <!-- MapMyVisitors widget for aq-li.github.io. Do not wrap the script in
-           #mapmyvisitors-widget; the script creates that element itself. -->
-      <div class="visitor-stats">
-        <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?d=TIculYlVyiOZ8ZrF3XUFpTvHEomLRfKGC9_GjkFbdQM&cl=ffffff&w=a"></script>
-      </div>
-    </section>
+              <!-- MapMyVisitors widget for aq-li.github.io. Do not wrap the script in
+                   #mapmyvisitors-widget; the script creates that element itself. -->
+              <div class="visitor-stats">
+                <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?d=TIculYlVyiOZ8ZrF3XUFpTvHEomLRfKGC9_GjkFbdQM&cl=ffffff&w=a"></script>
+              </div>
 
-    <footer class="footer">
-      <p>Webpage template adapted from <a href="https://jonbarron.info/">Jon Barron</a>.</p>
-      <p>Last updated: June, 2026</p>
-    </footer>
-
+              <div class="footer">
+                <p>
+                  Webpage template adapted from <a href="https://jonbarron.info/">Jon Barron</a>.
+                  <br> Last updated: June, 2026
+                </p>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </body>
 </html>
