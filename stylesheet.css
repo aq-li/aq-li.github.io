@@ -1,5 +1,7 @@
 /* Modern Font Setup */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;600&family=Outfit:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;600&family=Outfit:wght@600&family=Cormorant+Garamond:wght@700&display=swap');
+/* Chinese name: only its three glyphs are fetched; update text= if the name in <h1> changes */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&text=%E6%9D%8E%E5%AE%89%E9%BD%90&display=swap');
 
 :root {
   --primary-color: #1772d0;
@@ -82,12 +84,20 @@ a:hover {
 }
 
 h1 {
-  font-family: var(--heading-font);
-  font-size: 32px;
-  font-weight: 600;
+  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  font-size: 46px;
+  font-weight: 700;
   text-align: center;
   margin: 10px 0 20px;
   color: #222;
+}
+
+.name-zh {
+  margin-left: 6px;
+  font-family: 'Noto Serif SC', 'Songti SC', 'STSong', 'SimSun', serif;
+  font-size: 0.5em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
 }
 
 .profile-text p {
@@ -597,7 +607,7 @@ h1 {
   }
 
   h1 {
-    font-size: 27px;
+    font-size: 38px;
     margin: 0 0 12px;
   }
 
