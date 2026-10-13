@@ -160,6 +160,32 @@ h1 {
   vertical-align: -0.14em;
 }
 
+/* WeChat QR code pops up on hover; clicking the button opens the full image */
+.wechat {
+  position: relative;
+}
+
+.wechat-qr {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  z-index: 10;
+  width: 170px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, -4px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+}
+
+.wechat:hover .wechat-qr,
+.wechat:focus-within .wechat-qr {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+
 /* Section Headers */
 .section {
   padding: 15px 0;
