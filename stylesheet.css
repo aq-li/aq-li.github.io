@@ -35,6 +35,15 @@ body {
   padding: 0;
   width: 100%;
   overflow-x: hidden;
+  /* Long URLs or names break instead of widening the tables */
+  overflow-wrap: break-word;
+}
+
+/* Any image or video added later stays inside its column */
+img,
+video,
+iframe {
+  max-width: 100%;
 }
 
 .container {
@@ -122,12 +131,13 @@ h1 {
   display: block;
 }
 
+/* Wraps onto a second centered row when the column is too narrow
+   (half-screen windows, or after adding more links) */
 .social-links {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
-  width: fit-content;
-  gap: 10px;
+  gap: 8px 6px;
   text-align: center;
   margin: 25px auto 0;
 }
@@ -135,7 +145,7 @@ h1 {
 .social-links a {
   display: inline-block;
   margin: 0;
-  padding: 6px 10px;
+  padding: 6px 8px;
   font-size: 14px;
   white-space: nowrap;
   background-color: var(--light-gray);
@@ -570,14 +580,13 @@ h1 {
   text-decoration: underline;
 }
 
-/* Responsive Design */
+/* Responsive Design
+   Scale only with zoom (or real sizes), never transform: scale(). A transform
+   shrinks the page toward its center but keeps the full layout box, leaving a
+   blank band above the header that grows with the page length. */
 @media (max-width: 1000px) and (min-width: 769px) {
-  .page-wrapper {
-    padding: 30px;
-  }
-  
-  .container {
-    transform: scale(0.95);
+  :root {
+    --scale-factor: 0.8;
   }
 }
 
@@ -643,8 +652,6 @@ h1 {
   }
 
   .social-links {
-    flex-wrap: wrap;
-    width: auto;
     gap: 8px;
     margin-top: 18px;
   }
